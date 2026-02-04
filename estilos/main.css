@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7ff; 
+    color: #000000;
+}
+
+header {
+    background-color: #d10808; 
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+h1, h2 {
+    margin-bottom: 25px;
+}
+
+section {
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #ffffff; 
+    color: #0a0a0a; 
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.4); 
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #d10808;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #de0e0e;
+}
+
+a:hover {
+    color: #eee8f4;
+}
+
+
+.main-menu{
+    background-color:#f7f7f7; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+}
+
+.main-menu>ul>li {
+    position: relative;
+    margin: 0 18px;
+}
+
+.main-menu a {
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.main-menu a:hover{
+    background-color: #a80523; 
+    color: #cc0000; 
+}
+
+.main-menu a:active {
+    background-color:#EDE8FF; 
+    color:#820000;
+}
+
+.main-menu a:visited {
+    color:#e00b19; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#f92424; 
+    min-width: 100%;
+    box-shadow: 0 8px 16px rgba(128, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.main-menu li:hover>.submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu a {
+    padding: 12px 20px;
+    font-size: 0.9em;
+}
+
+.submenu a:hover {
+    background-color: #ef919598; 
+    color: #e10306;
+}
+
+.main-menu>ul>li>a::after {
+    content: '\25BC';
+    font-size: 0.7em;
+    margin-left: 5px;
+    transition: transform .3s;
+}
+
+.main-menu>ul>li>a:after {
+    content: '\25BC';
+    font-size: 0.7em;
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.main-menu>ul>li:hover>a:after {
+    transform: rotate(-180deg);
+}
+
+.main-menu .active>a {
+    background-color: #ff3543; 
+    color:#fff;
+}
+
+.produto { 
+    margin: 20px auto;    
+    text-align: center;   
+    background-color: #fff;
+   
+}
+
+img[src*="imagem tenis senai.png"] {
+    display: block;
+    margin: 10px auto;
+    width: 15%;
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
